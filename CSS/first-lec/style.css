@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: darkolivegreen;
+}
+
+.navbar {
+    background-color: rgb(31, 29, 29);
+    padding: 15px;
+}
+.navbar a {
+    color: wheat;
+    text-decoration: none;
+    padding: 15px;
+    font-size: larger;
+    background-color: rgb(31, 29, 29);
+}
+
+.navbar a:hover {
+    background-color: black;
+}
+
+.frame1 {
+    padding: 15px;
+}
+
+.image {
+    height: 144px;
+    width: 144px;
+}
+
+h2 {
+    color: whitesmoke;
+    margin: 19px 19px;
+}
+
+.image1 {
+    height: 420px;
+    width: 295px;
+    margin-left: 5px;
+}
+
+h1 {
+    color: cadetblue;
+    background-color: aqua;
+    text-align: center;
+    padding: 12px;
+    margin-top: 25px;
+    text-decoration: underline;
+}
+
+.image2 {
+    height: 143px;
+    width: 143px;
+    margin-top: 15px;
+    margin-left: 4px;
+}
+
+.image3 {
+    width: 244px;
+    height: 310px;
+    margin-left: 5px;
+}
+
+p {
+    color: white;
+    background-color: blueviolet;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: larger;
+}
+
+.image4 {
+    height: 50px;
+    width: 50px;
+}
+
+iframe {
+    height: 200px;
+    width: 280px;
+    border-radius: 10px;
+}
+
+.left {
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.center {
+    text-align: center;
+    margin-top: -135px;
+}
+
+.right {
+    text-align: right;
+    margin-top: -90px;
+    margin-right: 100px;
+}
+
+h4, address {
+    font-size: larger;
+}
