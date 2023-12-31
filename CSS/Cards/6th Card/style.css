@@ -1,0 +1,114 @@
+* {
+    font-family: sans-serif;
+    background-color: blueviolet;
+}
+
+.div0 {
+    height: 600px;
+    width: 1000px;
+    margin: 50px 100px;
+    border: solid 1px none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 3px rgb(30, 30, 30);
+    background-color: whitesmoke;
+}
+
+.d1 {
+    height: 360px;
+    width: 250px;
+    margin: 120px 90px;
+    border: solid 1px none;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 1px rgb(30, 30, 30);
+    background-color: white;
+    position: absolute;
+}
+
+.d2 {
+    height: 360px;
+    width: 250px;
+    margin: 120px 370px;
+    border: solid 1px none;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 1px rgb(30, 30, 30);
+    background-color: white;
+    position: absolute;
+}
+
+.d3 {
+    height: 360px;
+    width: 250px;
+    margin: 120px 650px;
+    border: solid 1px none;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 1px rgb(30, 30, 30);
+    background-color: white;
+    position: absolute;
+}
+
+img {
+    width: 250px;
+    height: 150px;
+    border-radius: 7px 7px 0px 0px;
+    position: absolute;
+}
+
+span {
+    color: white;
+    border: solid 1px none;
+    padding: 0px 10px 0px 10px;
+    border-radius: 15px;
+    position: absolute;
+    font-size: small;
+    margin: 160px 20px;
+}
+
+.span1 {
+    background-color: rgb(15, 206, 206);
+}
+
+.span2 {
+    background-color: rgb(101, 3, 171);
+}
+
+.span3 {
+    background-color: rgb(198, 59, 107);
+}
+
+.p1{
+    font-size: small;
+    font-weight: bold;
+    position: absolute;
+    margin: 200px 20px;
+    background-color: white;
+}
+
+.p2 {
+    font-size: 12px;
+    position: absolute;
+    background-color: white;
+    margin: 250px 20px;
+}
+
+.d4 img {
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    margin: 312px 20px;
+    position: absolute;
+}
+
+.p3 {
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    background-color: white;
+    margin: 315px 60px;
+}
+
+.p4 {
+    font-size: 11px;
+    position: absolute;
+    background-color: white;
+    margin: 330px 60px;
+}

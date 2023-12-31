@@ -1,0 +1,70 @@
+* {
+    font-family: sans-serif;
+}
+
+.div1 {
+    height: 325px;
+    width: 230px;
+    border: solid 3px black;
+    position: absolute;
+}
+
+.div2 {
+    height: 325px;
+    width: 230px;
+    margin-left: 250px;
+    border: solid 3px rgb(241, 80, 107);
+    position: absolute;
+    background-color: rgb(241, 80, 107);
+    color: white;
+}
+
+.div3 {
+    height: 325px;
+    width: 230px;
+    margin-left: 500px;
+    border: solid 3px black;
+    position: absolute;
+}
+
+.logo {
+    margin: 30px 90px;
+}
+
+.name p {
+    text-align: center;
+    font-size: x-large;
+    font-weight: 1000;
+    margin-top: -10px;
+}
+
+.lorem p {
+    text-align: center;
+    font-size: small;
+    width: 90%;
+    margin-left: 10px;
+}
+
+.link a {
+    border: solid 1px none;
+    background-color: black;
+    border-radius: 18px;
+    padding: 10px 55px 10px 55px;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    margin: 15px 20px;
+    font-size: small;
+}
+
+.link2 a {
+    border: solid 1px none;
+    background-color: white;
+    border-radius: 18px;
+    padding: 10px 55px 10px 55px;
+    text-decoration: none;
+    color: rgb(241, 80, 107);
+    position: absolute;
+    margin: 15px 20px;
+    font-size: small;
+}
