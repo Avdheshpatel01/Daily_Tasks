@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.box1 {
+    background-color: #00ff04;
+    height: 98vh;
+    width: 1010px;
+    position: relative;
+    border: 4px dashed #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar {
+    width: 500px;
+    height: 25px;
+    background: #000;
+    border-radius: 30px;
+    transform: rotate(-15deg);
+    animation: up-down 4s ease-in-out 2s infinite alternate;
+}
+
+.ball {
+    position: relative;
+    bottom: 100px;
+    left: calc(100% - 70px);
+    width: 100px;
+    height: 100px;
+    background: #ff0022;
+    border-radius: 50%;
+    animation: ball-move 4s ease-in-out 2s infinite alternate;
+}
+
+.ball::after {
+    position: absolute;
+    content: "";
+    top: 50px;
+    right: 10px;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+/* Animation for seesaw */
+@keyframes up-down {
+    from {
+        transform: rotate(-15deg);
+    }
+
+    to {
+        transform: rotate(15deg);
+    }
+}
+
+@keyframes ball-move {
+    from {
+        left: calc(100% - 70px);
+        transform: rotate(360deg);
+    }
+
+    to {
+        left: calc(0% - 35px);
+        transform: rotate(0deg);
+    }
+}
+
+.box2 {
+    background-color: #94bcdf;
+    height: 98vh;
+    width: 500px;
+    border: 4px dashed #000;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.surface {
+    position: absolute;
+    bottom: 0;
+    height: 20px;
+    width: 500px;
+    background-color: #000;
+    border-radius: 10px 10px 0px 0px;
+    border: none;
+
+}
+
+.ball1 {
+    background-color: #ff1a66;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 315px;
+    left: 30px;
+    animation: bounce 1.5s infinite;
+}
+
+.ball2 {
+    background-color: #00ff62;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 315px;
+    left: 130px;
+    animation: bounce 2.5s infinite;
+}
+
+.ball3 {
+    background-color: #00ffff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 315px;
+    left: 230px;
+    animation: bounce 2s infinite;
+}
+
+.ball4 {
+    background-color: #f6ff00;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 315px;
+    left: 330px;
+    animation: bounce 2.5s infinite;
+}
+
+.ball5 {
+    background-color: #1500ff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 315px;
+    left: 430px;
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    10% {
+        height: 50px;
+        width: 50px;
+    }
+
+    50% {
+        height: 30px;
+        width: 57px;
+        transform: translateY(350px);
+    }
+
+    75% {
+        height: 50px;
+        width: 57px;
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
