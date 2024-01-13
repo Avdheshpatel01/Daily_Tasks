@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #011222;
+    font-family: sans-serif;
+}
+
+.container {
+    height: 500px;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+    position: absolute;
+    margin: auto;
+    inset: 0;
+}
+
+.card {
+    height: 360px;
+    width: 22%;
+    border-radius: 40px 10px 10px 10px;
+}
+
+.card1 {
+    border: 10px solid #00ffff;
+}
+
+.card2 {
+    border: 10px solid #dc143c;
+}
+
+.card3 {
+    border: 10px solid #ffff00;
+}
+
+.icon {
+    height: 100px;
+    width: 100px;
+    border-radius: 29px 0px 40px 0px;
+    font-size: 2.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.i1 {
+    border: 10px solid #00ffff;
+    border-top: 0;
+    border-left: 0;
+}
+
+.i2 {
+    background-color: #dc143c;
+    border: 10px solid #dc143c;
+    border-top: 0;
+    border-left: 0;
+}
+
+.i3 {
+    border: 10px solid #ffff00;
+    border-top: 0;
+    border-left: 0;
+}
+
+.fa-pen-ruler {
+    color: #00ffff;
+}
+
+.fa-code {
+    color: #ffffff;
+}
+
+.fa-rocket {
+    color: #ffff00;
+}
+
+.heading {
+    position: absolute;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bolder;
+    border: 1px solid transparent;
+    margin-top: 30px;
+}
+
+.head1 {
+    padding: 0px 88px 0px 88px;
+}
+
+.head2 {
+    padding: 0px 35px 0px 35px;
+}
+
+.head3 {
+    padding: 0px 88px 0px 88px;
+}
+
+p {
+    position: absolute;
+    border: 1px solid transparent;
+    color: #fff;
+    width: 20ch;
+    word-spacing: 2px;
+    text-align: center;
+    padding: 0px 45px 0px 45px;
+    margin-top: 80px;
+}
+
+.button a {
+    position: absolute;
+    text-decoration: none;
+    color: #011222;
+    border: 1px solid transparent;
+    border-radius: 0px;
+    font-size: large;
+    font-weight: bold;
+    margin: 185px 55px 0px 55px;
+    padding: 8px 35px 8px 35px;
+    border-radius: 20px;
+}
+
+.link1 {
+    background-color: #00ffff;
+}
+
+.link2 {
+    background-color: #dc143c;
+}
+
+.link3 {
+    background-color: #ffff00;
+}
