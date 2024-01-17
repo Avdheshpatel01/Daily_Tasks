@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #011222;
+}
+
+.container {
+    width: 95%;
+    height: 400px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    row-gap: 10px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: content-box;
+    padding: 50px;
+}
+
+span, .grid-item {
+    color: grey;
+    font-size: larger;
+    background-color: white;
+    text-align: left;
+}
+
+.grid-item {
+    border-bottom: 2px solid lightgrey;
+    padding-top: 30px;
+}
+
+.item21, .item31, .item41 {
+    padding: 0;
+}   
+
+.item11, .item12, .item13, .item14, .item15, .item16 {
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+
+.item26 button , .item36 button , .item46 button{
+    height: 40px;
+    width: 40px;
+    color: red;
+    font-weight: bold;
+}
+
+.item24 button, .item34 button, .item44 button {
+    margin-left: 10px;
+    margin-right: 10px;
+} 
+
+button {
+    height: 35px;
+    width: 35px;
+    background-color: rgb(240, 233, 233);
+    border: solid 1px rgb(187, 187, 187);
+    border-radius: 50%;
+    color: grey;
+    font-size: larger;
+    text-align: center;
+    cursor: pointer;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
