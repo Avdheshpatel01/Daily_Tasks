@@ -1,0 +1,14 @@
+* {
+  font-family: sans-serif;
+}
+
+.heading {
+  color: brown;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.content {
+  height: 650px;
+  background-color: aliceblue;
+}

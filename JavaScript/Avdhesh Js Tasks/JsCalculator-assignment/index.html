@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator (oninput/onclick)</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      height: 400px;
+      width: 700px;
+      border: 3px solid #011222;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 50px;
+      text-decoration: underline;
+    }
+
+    span {
+      font-size: 1.3em;
+      font-weight: 500;
+    }
+
+    input {
+      height: 30px;
+      width: 250px;
+    }
+
+    button {
+      height: 50px;
+      width: 60px;
+      border-radius: 5px;
+      border: 1px solid transparent;
+      font-size: 1.3em;
+      cursor: pointer;
+    }
+
+    #answer {
+      color: #f00;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>Maths Operations</h1>
+      <pre>
+        
+
+        <span>Enter 1<sup>st</sup>  Number :                              </span><input type="text" id="number1"/>
+
+        <span>Enter 2<sup>nd</sup> Number :                              </span><input type="text" id="number2"/>
+
+
+        <button onclick="plus()">+</button> <button onclick="minus()">-</button> <button onclick="multiply()">*</button> <button onclick="divide()">/</button>
+
+
+        <span>Answer is :   <span id="answer"></span></span>
+      </pre>
+
+      <script>
+        let first = document.getElementById("number1");
+        let second = document.getElementById("number2");
+
+        function plus() {
+          let calculate = Number(first.value) + Number(second.value);
+          document.getElementById("answer").innerHTML = calculate;
+        }
+
+        function minus() {
+          let calculate = Number(first.value) - Number(second.value);
+          document.getElementById("answer").innerHTML = calculate;
+        }
+
+        function multiply() {
+          let calculate = Number(first.value) * Number(second.value);
+          document.getElementById("answer").innerHTML = calculate;
+        }
+
+        function divide() {
+          let calculate = Number(first.value) / Number(second.value);
+          document.getElementById("answer").innerHTML = calculate;
+        }
+      </script>
+    </div>
+  </body>
+</html>

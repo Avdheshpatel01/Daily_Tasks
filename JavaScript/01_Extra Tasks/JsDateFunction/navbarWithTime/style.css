@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #011222;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    width: 50%;
+    list-style-type: none;
+}
+
+li:first-child {
+    font-size: 2em;
+    font-weight: 600;
+    margin-right: 150px;
+}
+
+span {
+    color: #fff;
+}
+
+.logo {
+    color: blue;
+}
+
+a {
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+#date {
+    font-size: 2em;
+}

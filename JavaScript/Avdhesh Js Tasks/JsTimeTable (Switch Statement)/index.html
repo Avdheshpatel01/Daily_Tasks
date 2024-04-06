@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TimeTable (using switch)</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url(background1.avif) no-repeat center center / cover fixed;
+    }
+
+    .table {
+      height: 380px;
+      width: 270px;
+      border: 2px solid #fff;
+      border-radius: 10px;
+      background: transparent;
+      backdrop-filter: blur(8px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    p {
+      height: 70px;
+      width: 240px;
+      font-size: 1.5em;
+      border: 2px solid #fff;
+      border-radius: 8px;
+      background: transparent;
+      backdrop-filter: blur(8px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .heading {
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 10px 0;
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    .table {
+      display: none;
+    }
+  </style>
+  <body>
+    <div class="table" id="day0">
+      <h1>SUNDAY</h1>
+      <p class="heading">SUBJECT</p>
+      <p>Gujarati</p>
+      <p>SPCC</p>
+      <p>OC</p>
+    </div>
+    <div class="table" id="day1">
+      <h1>MONDAY</h1>
+      <p class="heading">SUBJECT</p>
+      <p>Economics</p>
+      <p>Statistics</p>
+      <p>Account</p>
+    </div>
+    <div class="table" id="day2">
+      <h1>TUESDAY</h1>
+      <p class="heading">SUBJECT</p>
+      <p>Maths</p>
+      <p>Gujarati</p>
+      <p>SPCC</p>
+    </div>
+    <div class="table" id="day3">
+      <h1>WEDNESDAY</h1>
+      <p class="heading">SUBJECT</p>
+      <p>OC</p>
+      <p>Economics</p>
+      <p>Statistics</p>
+    </div>
+    <div class="table" id="day4">
+      <h1>THURSDAY</h1>
+      <p class="heading">SUBJECT</p>
+      <p>Account</p>
+      <p>Maths</p>
+      <p>Gujarati</p>
+    </div>
+    <div class="table" id="day5">
+      <h1>FRIDAY</h1>
+      <p class="heading">SUBJECT</p>
+      <p>SPCC</p>
+      <p>OC</p>
+      <p>Economics</p>
+    </div>
+    <div class="table" id="day6">
+      <h1>SATURDAY</h1>
+      <p class="heading">SUBJECT</p>
+      <p>Statistics</p>
+      <p>Account</p>
+      <p>Maths</p>
+    </div>
+
+    <script>
+      let week = new Date().getDay();
+
+      switch (week) {
+        case 0:
+          document.getElementById("day0").style.display = "flex";
+          break;
+        case 1:
+          document.getElementById("day1").style.display = "flex";
+          break;
+        case 2:
+          document.getElementById("day2").style.display = "flex";
+          break;
+        case 3:
+          document.getElementById("day3").style.display = "flex";
+          break;
+        case 4:
+          document.getElementById("day4").style.display = "flex";
+          break;
+        case 5:
+          document.getElementById("day5").style.display = "flex";
+          break;
+        case 6:
+          document.getElementById("day6").style.display = "flex";
+          break;
+        default:
+          window.alert("invalid");
+          break;
+      }
+    </script>
+  </body>
+</html>

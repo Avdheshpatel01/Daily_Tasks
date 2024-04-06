@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NotesCalculator</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      width: 450px;
+      height: 500px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .images,
+    .inputs,
+    .outputs {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    img {
+      height: 45px;
+    }
+
+    input {
+      height: 45px;
+      width: 120px;
+      border: 2px solid blue;
+      border-radius: 5px;
+      margin-left: 30px;
+      text-align: center;
+      font-size: 1.1em;
+    }
+
+    .equalsign {
+      width: 25px;
+      height: 45px;
+      color: green;
+      border: 2px solid green;
+      background-color: aquamarine;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2em;
+      font-weight: 500;
+      margin: 0 10px;
+    }
+
+    .output {
+      width: 80px;
+      height: 45px;
+      color: blue;
+      border: 2px solid blue;
+      background-color: aqua;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2em;
+      font-weight: 500;
+    }
+
+    p {
+      display: flex;
+    }
+
+    .tc-tn {
+      width: 95%;
+      height: 45px;
+      color: green;
+      border: 2px solid green;
+      background-color: aquamarine;
+      border-radius: 5px;
+      margin-top: 20px;
+      padding-left: 20px;
+      display: flex;
+      align-items: center;
+      font-size: 1.2em;
+      font-weight: 500;
+    }
+
+    #totalcash,
+    #totalnotes {
+      color: red;
+      font-size: 1.2em;
+      font-weight: 600;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="images">
+        <img src="images/500.jpg" alt="500" />
+        <img src="images/200.jpg" alt="200" />
+        <img src="images/100.png" alt="100" />
+        <img src="images/50.jpg" alt="50" />
+        <img src="images/20.jpg" alt="20" />
+        <img src="images/10.jpg" alt="10" />
+        <img src="images/5.jpg" alt="5" />
+        <img src="images/2.jpg" alt="2" />
+        <img src="images/1.jpg" alt="1" />
+      </div>
+      <div class="inputs">
+        <input type="text" oninput="input()" id="fiveh" />
+        <input type="text" oninput="input()" id="twoh" />
+        <input type="text" oninput="input()" id="oneh" />
+        <input type="text" oninput="input()" id="fifty" />
+        <input type="text" oninput="input()" id="twenty" />
+        <input type="text" oninput="input()" id="ten" />
+        <input type="text" oninput="input()" id="five" />
+        <input type="text" oninput="input()" id="two" />
+        <input type="text" oninput="input()" id="one" />
+      </div>
+      <div class="outputs">
+        <p>
+          <span class="equalsign">=</span>
+          <span class="output" id="opone">0</span>
+        </p>
+        <p>
+          <span class="equalsign">=</span>
+          <span class="output" id="optwo">0</span>
+        </p>
+        <p>
+          <span class="equalsign">=</span>
+          <span class="output" id="opthree">0</span>
+        </p>
+        <p>
+          <span class="equalsign">=</span>
+          <span class="output" id="opfour">0</span>
+        </p>
+        <p>
+          <span class="equalsign">=</span>
+          <span class="output" id="opfive">0</span>
+        </p>
+        <p>
+          <span class="equalsign">=</span>
+          <span class="output" id="opsix">0</span>
+        </p>
+        <p>
+          <span class="equalsign">=</span>
+          <span class="output" id="opseven">0</span>
+        </p>
+        <p>
+          <span class="equalsign">=</span>
+          <span class="output" id="opeight">0</span>
+        </p>
+        <p>
+          <span class="equalsign">=</span>
+          <span class="output" id="opnine">0</span>
+        </p>
+      </div>
+    </div>
+    <p class="tc-tn">Total Cash : &nbsp;<span id="totalcash">0</span></p>
+    <p class="tc-tn">Total Notes : &nbsp;<span id="totalnotes">0</span></p>
+
+    <script>
+      function input() {
+        let noteOne = 500 * Number(fiveh.value);
+        document.getElementById("opone").innerHTML = noteOne;
+
+        let noteTwo = 200 * Number(twoh.value);
+        document.getElementById("optwo").innerHTML = noteTwo;
+
+        let noteThree = 100 * Number(oneh.value);
+        document.getElementById("opthree").innerHTML = noteThree;
+
+        let noteFour = 50 * Number(fifty.value);
+        document.getElementById("opfour").innerHTML = noteFour;
+
+        let noteFive = 20 * Number(twenty.value);
+        document.getElementById("opfive").innerHTML = noteFive;
+
+        let noteSix = 10 * Number(ten.value);
+        document.getElementById("opsix").innerHTML = noteSix;
+
+        let noteSeven = 5 * Number(five.value);
+        document.getElementById("opseven").innerHTML = noteSeven;
+
+        let noteEight = 2 * Number(two.value);
+        document.getElementById("opeight").innerHTML = noteEight;
+
+        let noteNine = 1 * Number(one.value);
+        document.getElementById("opnine").innerHTML = noteNine;
+
+        let calculation =
+          noteOne +
+          noteTwo +
+          noteThree +
+          noteFour +
+          noteFive +
+          noteSix +
+          noteSeven +
+          noteEight +
+          noteNine;
+        document.getElementById("totalcash").innerHTML = calculation;
+
+        let noteCalc =
+          Number(fiveh.value) +
+          Number(twoh.value) +
+          Number(oneh.value) +
+          Number(fifty.value) +
+          Number(twenty.value) +
+          Number(ten.value) +
+          Number(five.value) +
+          Number(two.value) +
+          Number(one.value);
+        document.getElementById("totalnotes").innerHTML = noteCalc;
+      }
+    </script>
+  </body>
+</html>

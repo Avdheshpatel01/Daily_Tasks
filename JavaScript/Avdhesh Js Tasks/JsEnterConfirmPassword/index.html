@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Checker</title>
+  </head>
+  <body>
+    Enter Password :
+    <input type="text" id="passone" /> <br />
+    <br />
+    Confirm Password :
+    <input type="text" id="passtwo" /> <br />
+    <br />
+    <button onclick="clicked()">CLICK HERE</button> <br />
+    <br />
+    <h1 id="output"></h1>
+
+    <script>
+      let a = document.getElementById("passone").value;
+      let b = document.getElementById("passtwo").value;
+
+      function clicked() {
+        if (a && b && a === b) {
+          document.getElementById("output").innerHTML = "Password is correct!";
+        } else {
+          document.getElementById("output").innerHTML =
+            "Password is incorrect!";
+        }
+      }
+    </script>
+  </body>
+</html>

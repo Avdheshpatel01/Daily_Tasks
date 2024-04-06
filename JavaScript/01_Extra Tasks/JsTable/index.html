@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table (JS)</title>
+  </head>
+  <style>
+    * {
+      font-family: sans-serif;
+      text-align: center;
+      font-size: 1.1em;
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    table,
+    th,
+    td {
+      border: 2px solid black;
+    }
+
+    table {
+      width: 90%;
+    }
+  </style>
+  <body>
+    <table>
+      <tr>
+        <th>Sr. No.</th>
+        <th>Name</th>
+        <th>Hindi</th>
+        <th>Gujarati</th>
+        <th>Total</th>
+        <th>Result</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>abc</td>
+        <td>85</td>
+        <td>88</td>
+        <td id="total1"></td>
+        <td id="pass">pass</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>def</td>
+        <td>65</td>
+        <td>89</td>
+        <td id="total2"></td>
+        <td id="pass2">pass</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>ghi</td>
+        <td>83</td>
+        <td>29</td>
+        <td id="total3"></td>
+        <td id="fail">fail</td>
+      </tr>
+    </table>
+
+    <script>
+      document.getElementById("total1").innerHTML = 85 + 88;
+      document.getElementById("total2").innerHTML = 65 + 89;
+      document.getElementById("total3").innerHTML = 83 + 29;
+
+      document.getElementById("pass").style.backgroundColor = "green";
+      document.getElementById("pass").style.color = "white";
+
+      document.getElementById("pass2").style.backgroundColor = "green";
+      document.getElementById("pass2").style.color = "white";
+
+      document.getElementById("fail").style.backgroundColor = "red";
+      document.getElementById("fail").style.color = "white";
+    </script>
+  </body>
+</html>

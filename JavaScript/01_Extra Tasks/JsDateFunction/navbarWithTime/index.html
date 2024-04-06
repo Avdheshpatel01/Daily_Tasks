@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><span>Av<span class="logo">Code.</span></span></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div id="date"></div>
+    </nav>
+
+
+
+
+    <script>
+        var a = new Date();
+        var b = a.getHours() + ":" + a.getMinutes() + ":" + a.getSeconds();
+        document.getElementById("date").innerHTML = b;
+    </script>
+</body>
+</html>

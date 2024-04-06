@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <input type="text" id="input" required />
+    <button onclick="main()">Submit</button>
+    <ol id="list"></ol>
+
+    <script>
+      function main() {
+        let inputValue = document.getElementById("input").value;
+
+        document.getElementById("list").innerHTML =
+          document.getElementById("list").innerHTML +
+          "<li>" +
+          inputValue +
+          "</li>";
+      }
+    </script>
+  </body>
+</html>

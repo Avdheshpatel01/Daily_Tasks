@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MarkSheet</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      width: 600px;
+      height: 550px;
+      border: 2px solid #000;
+      padding: 30px 50px;
+    }
+
+    .enter-marks {
+      font-size: 16px;
+      font-weight: 500;
+      margin: 30px 0 0 320px;
+    }
+
+    .box,
+    .result {
+      width: 500px;
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 10px;
+      margin-top: 30px;
+    }
+
+    .subject {
+      margin-bottom: 10px;
+    }
+
+    button {
+      width: 100px;
+      height: 30px;
+      border: 1px solid transparent;
+      font-size: 16px;
+      font-weight: 500;
+      margin: 20px 0 0 235px;
+    }
+
+    #final-total,
+    #percentages {
+      color: #f00;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h3>Marksheet for Information Technology</h3>
+      <p class="enter-marks">Enter Marks</p>
+      <div class="box">
+        <p class="subject">1. C Language</p>
+        <input type="text" id="subject1" />
+        <p class="subject">2. C++ Language</p>
+        <input type="text" id="subject2" />
+        <p class="subject">3. Database</p>
+        <input type="text" id="subject3" />
+        <p class="subject">4. HTML</p>
+        <input type="text" id="subject4" />
+        <p class="subject">5. CSS</p>
+        <input type="text" id="subject5" />
+        <p class="subject">6. php</p>
+        <input type="text" id="subject6" />
+        <p class="subject">7. Core Java</p>
+        <input type="text" id="subject7" />
+      </div>
+      <button onclick="total()">Result</button>
+      <div class="result">
+        <span>Total is : <span id="final-total"></span> / 350</span>
+        <span>Percentages are : <span id="percentages"></span>%</span>
+      </div>
+    </div>
+
+    <script>
+      let one = document.getElementById("subject1");
+      let two = document.getElementById("subject2");
+      let three = document.getElementById("subject3");
+      let four = document.getElementById("subject4");
+      let five = document.getElementById("subject5");
+      let six = document.getElementById("subject6");
+      let seven = document.getElementById("subject7");
+
+      function total() {
+        let calculate =
+          Number(one.value) +
+          Number(two.value) +
+          Number(three.value) +
+          Number(four.value) +
+          Number(five.value) +
+          Number(six.value) +
+          Number(seven.value);
+
+        document.getElementById("final-total").innerHTML = calculate;
+
+        document.getElementById("percentages").innerHTML =
+          (calculate * 100) / 350;
+      }
+    </script>
+  </body>
+</html>

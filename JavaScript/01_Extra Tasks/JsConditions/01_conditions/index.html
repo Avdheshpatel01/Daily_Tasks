@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DayCycle (conditions)</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    #dayCycle {
+      height: 600px;
+      width: 350px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border: 10px solid #011222;
+    }
+  </style>
+  <body>
+    <div id="dayCycle"></div>
+
+    <script>
+      let date = new Date().getHours();
+
+      if (date < 12) {
+        document.getElementById("dayCycle").style.backgroundImage =
+          "url(morning.jpg)";
+      } else if (date < 17) {
+        document.getElementById("dayCycle").style.backgroundImage =
+          "url(afternoon.jpg)";
+      } else if (date < 20) {
+        document.getElementById("dayCycle").style.backgroundImage =
+          "url(evening.jpg)";
+      } else {
+        document.getElementById("dayCycle").style.backgroundImage =
+          "url(night.jpg)";
+      }
+    </script>
+  </body>
+</html>

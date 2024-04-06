@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form onsubmit="return clicked()">
+      <table>
+        <tr>
+          <td>Enter Your Name :</td>
+          <td>
+            <input
+              type="text"
+              oninput="inputDetails()"
+              id="inputName"
+              class="enterDetails"
+              placeholder="e.g.  First Name     Middle Name     Last Name"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Enter Your Roll No. :</td>
+          <td>
+            <input
+              type="text"
+              oninput="inputDetails()"
+              id="inputRoll-no"
+              class="enterDetails"
+              placeholder="e.g.  A-001"
+              required
+            />
+          </td>
+        </tr>
+      </table>
+      <table border="2" class="result">
+        <tr>
+          <td colspan="5">School Name : <b>ABC INTERNATIONAL SCHOOL</b></td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            Name : <b><span id="outputName"></span></b>
+          </td>
+          <td style="width: 150px">
+            Roll no. : <b><span id="outputRoll-no"></span></b>
+          </td>
+          <!-- <td>
+          Std. : <b>10<sup>th</sup></b>
+        </td> -->
+        </tr>
+        <tr>
+          <th rowspan="2">Subject</th>
+          <th colspan="2">Obtained Marks</th>
+          <th rowspan="2">Total marks</th>
+        </tr>
+        <tr>
+          <th>Internal Marks (30)</th>
+          <th>External Marks (70)</th>
+        </tr>
+        <tr>
+          <td>Gujarati</td>
+          <td class="text-edit">
+            <input
+              type="text"
+              oninput="calculate()"
+              placeholder="Marks"
+              id="guj-int"
+              required
+            />
+          </td>
+          <td class="text-edit">
+            <input
+              type="text"
+              oninput="calculate()"
+              placeholder="Marks"
+              id="guj-ext"
+              required
+            />
+          </td>
+          <td class="text-edit" id="guj-total"></td>
+        </tr>
+        <tr>
+          <td>Maths</td>
+          <td class="text-edit">
+            <input
+              type="text"
+              oninput="calculate()"
+              placeholder="Marks"
+              id="maths-int"
+              required
+            />
+          </td>
+          <td class="text-edit">
+            <input
+              type="text"
+              oninput="calculate()"
+              placeholder="Marks"
+              id="maths-ext"
+              required
+            />
+          </td>
+          <td class="text-edit" id="maths-total"></td>
+        </tr>
+        <tr>
+          <td>English</td>
+          <td class="text-edit">
+            <input
+              type="text"
+              oninput="calculate()"
+              placeholder="Marks"
+              id="eng-int"
+              required
+            />
+          </td>
+          <td class="text-edit">
+            <input
+              type="text"
+              oninput="calculate()"
+              placeholder="Marks"
+              id="eng-ext"
+              required
+            />
+          </td>
+          <td class="text-edit" id="eng-total"></td>
+        </tr>
+        <tr>
+          <td>Science</td>
+          <td class="text-edit">
+            <input
+              type="text"
+              oninput="calculate()"
+              placeholder="Marks"
+              id="sci-int"
+              required
+            />
+          </td>
+          <td class="text-edit">
+            <input
+              type="text"
+              oninput="calculate()"
+              placeholder="Marks"
+              id="sci-ext"
+              required
+            />
+          </td>
+          <td class="text-edit" id="sci-total"></td>
+        </tr>
+        <tr>
+          <td>Hindi</td>
+          <td class="text-edit">
+            <input
+              type="text"
+              oninput="calculate()"
+              placeholder="Marks"
+              id="hindi-int"
+              required
+            />
+          </td>
+          <td class="text-edit">
+            <input
+              type="text"
+              oninput="calculate()"
+              placeholder="Marks"
+              id="hindi-ext"
+              required
+            />
+          </td>
+          <td class="text-edit" id="hindi-total"></td>
+        </tr>
+        <tr>
+          <td>Total Marks</td>
+          <td class="text-edit" id="int-total" style="font-weight: bold"></td>
+          <td class="text-edit" id="ext-total" style="font-weight: bold"></td>
+          <td style="text-align: right; padding-right: 20px">
+            <b><span id="overall-total"></span></b> / 500
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">Percentages</td>
+          <td class="text-edit">
+            <b><span id="percentages"></span></b>
+          </td>
+          <td class="text-edit">
+            <b><span id="invalid-text"></span></b>
+          </td>
+        </tr>
+        <tr>
+          <td>Pass / Fail</td>
+          <td class="text-edit" id="pass-fail"></td>
+          <td>Grade</td>
+          <td class="text-edit" id="overall-grade"></td>
+        </tr>
+        <tr>
+          <td style="border: none; padding: 8px 20px">
+            <button>Submit</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
